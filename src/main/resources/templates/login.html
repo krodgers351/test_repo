@@ -16,7 +16,7 @@
         <div data-th-if="${param.logout}">
             You have been logged out.
         </div>-->
-		<!--<section>
+		<section>
 			<div data-th-if="${param.error}">
             Invalid username and password.
 			</div>
@@ -30,44 +30,6 @@
 				<div><label> Password: <input type="password" name="password"/> </label></div>
 				<div><input type="submit" value="Sign In"/></div>
 			</form>
-		</section>-->
-		<section id="tblLogin"> 
-			<div data-th-if="${param.error}">
-				Invalid username and password.
-			</div>
-			<div data-th-if="${param.logout}">
-				You have been logged out.
-			</div>
-            <form data-th-action="@{/login}" method="post">
-                <table>
-                    <tr>
-                        <th>Sign in to your account</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img th:src="@{/images/login.jpg}" alt="login man with key and lock" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-							<label> User Name: <input type="text" name="username"/> </label>
-                            <!--<label class="lblHidden" for="username">User Name:
-                            <input type="text" name="username" maxlength="100" placeholder="User Name" required/></label>-->
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label> Password: <input type="password" name="password"/> </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-							<input class="button" type="submit" value="Sign In"/>
-                            <!--<input type="submit" class="button" name="btnSubmit" id="btnSubmit" value="Sign In" />-->
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </section>
+		</section>
     </body>
 </html>
