@@ -31,7 +31,6 @@ header{
 
 footer{
 	clear:both;
-	font-family: Orbitron, Arial, sans-serif;
 	font-size:0.7em;
 	background-color: rgba(0,0,0,0.9);
 	border-radius: 0px 15px 0px 0px;
@@ -52,7 +51,6 @@ footer{
 }
 
 .content ul{
-	font-family: Michroma, Arial, sans-serif;
 	text-align:center;
 }
 
@@ -107,7 +105,6 @@ footer ul{
 
 p {
 	padding: 0% 2%;
-	font-family: Michroma, Arial, sans-serif;
 	margin-bottom: 2.5%;
 }
 
@@ -116,7 +113,6 @@ h1{
 	color: #0A30DA;
 	
 	opacity: 0.8;
-	font-family: DistantGalaxy, Arial, sans-serif;
 	font-size: 3.5em;
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	margin-bottom: 0.5%;
@@ -128,7 +124,6 @@ h2 {
 	padding: 0% 2%;
 	margin-bottom: 0.5%;
 	text-align:center;
-	font-family: Orbitron, Arial, sans-serif;
 }
 
 img {
@@ -155,7 +150,6 @@ img {
 a:link {
 	text-decoration: none;
 	color:white;
-	font-family: Virgo, Arial, sans-serif;
 }
 
 a:visited {
@@ -171,7 +165,6 @@ a:hover{
 nav a:link {
 	text-decoration: none;
 	color:white;
-	font-family: Virgo, Arial, sans-serif;
 }
 
 nav a:visited {
