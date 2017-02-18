@@ -24,7 +24,11 @@ h1 {
     font-size: 3.5em;
 }
 
-table, section {
+ul {
+    list-style-position: inside;
+}
+
+table, #welcomeOptions {
     margin: auto;
     text-align: center;
     width: 50%;
@@ -39,6 +43,10 @@ table, section {
     -webkit-border-radius: 10px;
 }
 
+#frmChooseQuiz {
+    margin-bottom: 10px;
+}
+
 #tblLogin th {
     height: 50px;
     font-size: 1.5em;
@@ -46,6 +54,180 @@ table, section {
 
 #tblLogin td {
     height: 40px;
+}
+
+#tblCreateCard td {
+    text-align: right;
+    height: 40px;
+    width: 40%;
+    padding-right: 5px;
+}
+
+#tblCreateCard td+td {
+    text-align: left;
+    width: 60%;
+}
+
+#tblCreateCard th {
+    height: 50px;
+}
+
+#tblCreateCard .button {
+    float: right;
+    margin-right: 15%;
+}
+
+#tblCreateCard select {
+    min-width: 190px;
+}
+
+#tblCreateQuiz td {
+    text-align: right;
+    height: 40px;
+    width: 40%;
+    padding-right: 5px;
+}
+
+#tblCreateQuiz td+td {
+    text-align: left;
+    width: 60%;
+}
+
+#tblCreateQuiz th {
+    height: 50px;
+}
+
+#tblCreateQuiz .button {
+    float: right;
+    margin-right: 15%;
+}
+
+#tblTakeQuiz {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    border-color: #a7b1c4;
+    border-width:6px;	
+    border-style:inset;
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0, 1); 
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0, 1);
+    box-shadow: 5px 5px 5px rgba(100,0,0, 1);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#tblTakeQuiz td {
+    text-align: center;
+    height: 40px;
+    width: 50%;
+    padding-right: 5px;
+}
+
+#previous {
+    float: left;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+#next {
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+#btnFlip {
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 4%;
+}
+
+#question {
+    height: 325px;
+}
+
+#progress {
+    float:left;
+    margin-left: 7px;
+    margin-right: 10px;
+    margin-bottom: 2%;
+    font-family: Virgo, Arial, sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+#lblQuiz{
+    font-family: 'ChunkFive Regular', Tahoma, Helvetica;
+}
+
+#txtQuiz{
+    font-family: 'ChunkFive Regular', Tahoma, Helvetica;
+    text-align: left;
+    margin-left: 4%;
+    padding-bottom: 13px;
+}
+
+#flipbox {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    font-family: 'ChunkFive Regular', Tahoma, Helvetica;
+    font-size: 1.2em;
+}
+
+#frontCard  {
+    height: 90%;
+    width: 90%;
+    background-color: lightblue;
+    text-align: center;
+    position: absolute;   
+    border-radius: 6px;
+}
+
+#backCard {
+    height: 90%;
+    width: 90%;
+    background-color: lightblue;
+    text-align: center;
+    position: absolute;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.radiogroup{
+    text-align: left;
+    width: auto;
+    justify-content: center;
+    display:inline-block;
+    align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+#result {
+    font-size: 1.7em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px auto;
+}
+
+li {
+    margin: 20px auto;
 }
 
 .button{
@@ -70,6 +252,47 @@ table, section {
     filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7b1c4', endColorstr='#3a5061',GradientType=0 );
     margin: 10px 0;
 }
+
+.cardButtons {
+    -moz-box-shadow:inset 0px 0px 15px 3px #23395e;
+    -webkit-box-shadow:inset 0px 0px 15px 3px #23395e;
+    box-shadow:inset 0px 0px 15px 3px #23395e;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2e466e), color-stop(1, #415989));
+    background:-moz-linear-gradient(top, #2e466e 5%, #415989 100%);
+    background:-webkit-linear-gradient(top, #2e466e 5%, #415989 100%);
+    background:-o-linear-gradient(top, #2e466e 5%, #415989 100%);
+    background:-ms-linear-gradient(top, #2e466e 5%, #415989 100%);
+    background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
+    background-color:#2e466e;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border:3px solid #1f2f47;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family: Virgo, Arial, sans-serif;
+    font-size:15px;
+    letter-spacing: 1px;
+    padding:6px 7px;
+    text-decoration:none;	
+}
+.cardButtons:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #415989), color-stop(1, #2e466e));
+    background:-moz-linear-gradient(top, #415989 5%, #2e466e 100%);
+    background:-webkit-linear-gradient(top, #415989 5%, #2e466e 100%);
+    background:-o-linear-gradient(top, #415989 5%, #2e466e 100%);
+    background:-ms-linear-gradient(top, #415989 5%, #2e466e 100%);
+    background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e',GradientType=0);
+    background-color:#415989;
+}
+.cardButtons:active {
+    position:relative;
+    top:1px;
+}
+/* This button was generated using http://www.bestcssbuttongenerator.com/ */
 
 .lblHidden {
     position: absolute; 
