@@ -32,8 +32,8 @@
 		<hr />
         Add Entry to KM Catalog<br />
         <form data-th-action="@{/kmcatalogentries/add}" name="addKMCatalogEntryForm" method="post">
-            Title: <input type="text" name="title" /><br />
-			Knowledge Owner: <input type="text" name="owner" /><br />
+            Title: <input type="text" name="documentTitle" /><br />
+			Knowledge Owner: <input type="text" name="knowledgeOwner" /><br />
 			Audience: <input type="text" name="audience" /><br />
             Document Category:<br />
 			<input type="radio" name="documentCategory" value="Unknown" checked="checked" /> Unknown<br />
@@ -54,7 +54,7 @@
             <input type="radio" name="community" value="Mechanical_Engineers" /> Mechanical Engineers<br />
             <input type="radio" name="community" value="System_Administration" /> System Administration<br />
 			<input type="radio" name="community" value="Developers" /> Developers<br />
-			Filename: <input type="text" name="filename" /><br />
+			Filename: <input type="text" name="documentFilename" /><br />
             <input type="submit" value="Add Catalog Entry"/>
         </form>
         
