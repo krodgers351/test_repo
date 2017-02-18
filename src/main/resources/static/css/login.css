@@ -4,11 +4,7 @@
     margin: 0;
 }
 
-html {
-    height: 100%;
-    background-color: #3a5061;
-    visibility:hidden;
-}
+
 
 body {
     margin:0px auto;
@@ -24,7 +20,7 @@ h1 {
     font-size: 3.5em;
 }
 
-table, #login {
+#login {
     margin: auto;
     text-align: center;
     width: 50%;
