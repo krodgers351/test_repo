@@ -6,7 +6,7 @@
     </head>
     <body> 
 		<header>
-            <h1><img src="${pageContext.request.contextPath}/images/logo2.jpg" alt="head with knowledge" />iKnowledge</h1> 
+            <h1><img th:src="@{../images/logo2.jpg" alt="head with knowledge" />iKnowledge</h1> 
         </header>	
         <div data-th-if="${param.error}">
             Invalid username and password.
