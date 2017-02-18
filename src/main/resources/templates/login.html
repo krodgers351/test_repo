@@ -14,7 +14,7 @@
         <div data-th-if="${param.logout}">
             You have been logged out.
         </div>
-		<section class="content">
+		<section>
 			<form data-th-action="@{/login}" method="post">
 				<div><label>Sign in to your Account</label></div>
 				<div><img th:src="@{/images/login.jpg}" alt="login man with key and lock" /></div>
@@ -23,5 +23,6 @@
 				<div><input type="submit" value="Sign In"/></div>
 			</form>
 		</section>
+		
     </body>
 </html>
