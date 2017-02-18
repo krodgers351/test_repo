@@ -23,7 +23,6 @@ body {
 
 
 header{
-	width: 100%;
 	background-color: rgba(0,0,0,0.9);
 	padding: 20px auto;
 	margin-bottom: 3%;
@@ -79,6 +78,16 @@ th {
 	padding-left: 3%;
 }
 
+#catalog {
+	border: 1px solid white;
+	margin-left: 20px;
+}
+
+td, th {
+    padding: 3px;
+	margin: 2px;
+}
+
 section {
 	overflow:auto;
 	background-color: rgba(0,0,0,0.9);
@@ -96,6 +105,7 @@ p {
 }
 
 h1{
+	width: 100%;
 	text-align:center;
 	color: #0A30DA;	
 	opacity: 0.8;
