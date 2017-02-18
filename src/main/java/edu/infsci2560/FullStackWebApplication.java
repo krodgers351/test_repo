@@ -17,7 +17,13 @@ public class FullStackWebApplication {
     private static final Logger log = LoggerFactory.getLogger(FullStackWebApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(FullStackWebApplication.class, args);
+        //SpringApplication.run(FullStackWebApplication.class, args);
+		ApplicationContext ctx = SpringApplication.run(FullStackWebApplication.class, args);
+		
+		KMCatalogEntryRepository repository; = ctx.getBean(KMCatalogEntryRepository.class);
+        repository.save(new KMCatalogEntry(1L, "C# Coding Standards", "John Doe", "UnitA", DocumentCategory.Standard, Community.Developers, "csharpstandard.pdf"));
+        repository.save(new KMCatalogEntry(2L, "Contaminated Sample Procedure", "Jane Smith", "UnitC", DocumentCategory.Procedure, Community.Chemical_Engineers, "contaminated_sample_procedure.pdf"));
+        repository.save(new KMCatalogEntry(3L, "Communications Wiring Diagram for Product X", "Jimmy Jones", "UnitB", DocumentCategory.Design, Community.Electrical_Engineers, "x_comms_wiring_diagram.pdf"));
     }
 
 //    @Bean
@@ -34,37 +40,37 @@ public class FullStackWebApplication {
 //
 //        };
 //    }
-    @Bean
-    public CommandLineRunner databaseDemo(CustomerRepository repository) {
-        return (args) -> {
-            // save a couple of customers
-            repository.save(new Customer("Jack", "Bauer"));
-            repository.save(new Customer("Chloe", "O'Brian"));
-            repository.save(new Customer("Kim", "Bauer"));
-            repository.save(new Customer("David", "Palmer"));
-            repository.save(new Customer("Michelle", "Dessler"));
-            repository.save(new Customer("Billy", "Bean"));
-
-            // fetch all customers
-            log.info("[Database Demo] Customers found with findAll():");
-            log.info("[Database Demo] -------------------------------");
-            for (Customer customer : repository.findAll()) {
-                log.info("[Database Demo] " + customer.toString());
-            }
-            log.info("");
-
-            // fetch an individual customer by ID
-            Customer customer = repository.findOne(1L);
-            log.info("[Database Demo] Customer found with findOne(1L):");
-            log.info("[Database Demo] --------------------------------");
-            log.info("[Database Demo] " + customer.toString());            
-
-            // fetch customers by last name
-            log.info("[Database Demo] Customer found with findByLastName('Bauer'):");
-            log.info("[Database Demo] --------------------------------------------");
-            for (Customer bauer : repository.findByLastName("Bauer")) {
-                log.info("[Database Demo] " + bauer.toString());
-            }            
-        };
-    }
+//    @Bean
+//    public CommandLineRunner databaseDemo(CustomerRepository repository) {
+//        return (args) -> {
+//            // save a couple of customers
+//            repository.save(new Customer("Jack", "Bauer"));
+//            repository.save(new Customer("Chloe", "O'Brian"));
+//           repository.save(new Customer("Kim", "Bauer"));
+//            repository.save(new Customer("David", "Palmer"));
+//            repository.save(new Customer("Michelle", "Dessler"));
+//            repository.save(new Customer("Billy", "Bean"));
+//
+//            // fetch all customers
+//            log.info("[Database Demo] Customers found with findAll():");
+//            log.info("[Database Demo] -------------------------------");
+//           for (Customer customer : repository.findAll()) {
+ //               log.info("[Database Demo] " + customer.toString());
+//            }
+//            log.info("");
+//
+//            // fetch an individual customer by ID
+//            Customer customer = repository.findOne(1L);
+//            log.info("[Database Demo] Customer found with findOne(1L):");
+//            log.info("[Database Demo] --------------------------------");
+//            log.info("[Database Demo] " + customer.toString());            
+//
+//            // fetch customers by last name
+//            log.info("[Database Demo] Customer found with findByLastName('Bauer'):");
+//            log.info("[Database Demo] --------------------------------------------");
+//            for (Customer bauer : repository.findByLastName("Bauer")) {
+//                log.info("[Database Demo] " + bauer.toString());
+//            }            
+//        };
+//    }
 }
