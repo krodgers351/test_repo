@@ -14,7 +14,7 @@
         <div data-th-if="${param.logout}">
             You have been logged out.
         </div>-->
-		<section>
+		<!--<section>
 			<div data-th-if="${param.error}">
             Invalid username and password.
 			</div>
@@ -28,7 +28,7 @@
 				<div><label> Password: <input type="password" name="password"/> </label></div>
 				<div><input type="submit" value="Sign In"/></div>
 			</form>
-		</section>
+		</section>-->
 		<section id="tblLogin"> 
 			<div data-th-if="${param.error}">
 				Invalid username and password.
@@ -36,7 +36,7 @@
 			<div data-th-if="${param.logout}">
 				You have been logged out.
 			</div>
-            <form name="frmLogin" id="frmLogin" data-th-action="@{/login}" method="post">
+            <form data-th-action="@{/login}" method="post">
                 <table>
                     <tr>
                         <th>Sign in to your account</th>
@@ -60,7 +60,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" class="button" name="btnSubmit" id="btnSubmit" value="Sign In" />
+							<input class="button" type="submit" value="Sign In"/>
+                            <!--<input type="submit" class="button" name="btnSubmit" id="btnSubmit" value="Sign In" />-->
                         </td>
                     </tr>
                 </table>
