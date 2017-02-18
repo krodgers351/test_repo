@@ -6,7 +6,7 @@
     </head>
     <body> 
 		<header>
-            <h1><img src="images/logo2.jpg" alt="head with knowledge" />iKnowledge</h1> 
+            <h1><img src="${pageContext.request.contextPath}/images/logo2.jpg" alt="head with knowledge" />iKnowledge</h1> 
         </header>	
         <div data-th-if="${param.error}">
             Invalid username and password.
@@ -17,7 +17,7 @@
 		<section class="content">
 			<form data-th-action="@{/login}" method="post">
 				<div><label>Sign in to your Account</label></div>
-				<div><img src="images/login.jpg" alt="login man with key and lock" /></div>
+				<div><img src="${pageContext.request.contextPath}/resources/templates/images/login.jpg" alt="login man with key and lock" /></div>
 				<div><label> User Name: <input type="text" name="username"/> </label></div>
 				<div><label> Password: <input type="password" name="password"/> </label></div>
 				<div><input type="submit" value="Sign In"/></div>
