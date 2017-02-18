@@ -29,12 +29,10 @@ header{
 	border-radius: 0px 75px 0px 10px;
 }
 
-footer{
-	clear:both;
-	font-size:0.7em;
-	background-color: rgba(0,0,0,0.9);
-	border-radius: 0px 15px 0px 0px;
-	color: white;
+th {
+    text-align: left;
+	height: 50px;
+    font-size: 1.5em;
 }
 
 .content {
@@ -91,18 +89,6 @@ ul {
 	list-style-type: none;
 }
 
-footer li {
-	display: inline-block;
-	width: 33%;
-	text-align:center;
-	white-space: nowrap;
-	letter-spacing: 2px;
-}
-
-footer ul{
-	list-style-type: none;
-}
-
 p {
 	padding: 0% 2%;
 	margin-bottom: 2.5%;
@@ -118,12 +104,6 @@ h1{
 	margin-bottom: 0.5%;
 	margin-top: 0.5%;
 	letter-spacing: 3px;
-}
-
-h2 {
-	padding: 0% 2%;
-	margin-bottom: 0.5%;
-	text-align:center;
 }
 
 img {
@@ -180,137 +160,4 @@ nav a:hover {
 
 a:active, nav a:active {
     background-color: #A9D0F5;
-}
-
-@media only screen and (max-width: 1280px) {
-	body {width:90%;}
-	h1 { font-size: 2.6em; }
-	#nav li{font-size: 1.3em;}
-}
-
-@media only screen and (max-width: 975px) {
-	h1 { font-size: 2.4em; }
-	footer li{
-		display: block;
-		text-align:center;
-		width:100%;
-		font-size:0.7em;
-	}
-	body {width:100%;}
-	#nav{
-		width:26%;
-	}
-	.content{margin-left:0.5%;}
-	#nav li{font-size: 1.2em;}
-	nav a:hover {
-	font-size: 101%;
-	letter-spacing: 1px;
-	}
-}
-
-@media only screen and (max-width: 820px) {
-	#nav li{font-size: 1.07em;}
-	nav a:hover {
-	font-size: 102%;
-	letter-spacing: 0px;
-	}
-}
-
-@media only screen and (max-width: 680px) {
-	#nav {
-		float:center;
-		width:65%;
-		margin: 0 auto 3% auto;
-		text-align:center;
-		background-color: rgba(0,0,0,0.8);
-		min-height: 0%;
-		font-size:1.2em;
-	}
-	#nav ul, h2{
-		margin: 0% auto;
-		
-	}
-	h2{
-		margin: 1% auto;
-	}
-   .content{
-		float:center;
-		width:100%;
-		height:auto;
-		font-size:0.95em;
-		border-radius: 0px 0px 10px 10px;
-	}
-	footer li{
-		text-align:left;
-		padding-left: 1%;
-	}
-	header{ border-radius: 0px 35px 0px 35px;}
-	nav a:hover {
-		font-size: 100%;
-		letter-spacing: 1px;
-	}
-	h1 { font-size: 2.2em; }
-}
-
-@media only screen and (max-width: 450px) {
-	h1 { font-size: 1.8em; }
-}
-
-@media only screen and (max-width: 340px) {
-    h1 { font-size: 1.2em; }
-    h2 { font-size: 1.2em; }
-    #nav { 
-		font-size:0.9em; 
-		border-radius: 15px 15px 0px 0px;
-	}
-    .content { font-size:0.8em; }
-    footer{ font-size:0.8em; }
-}
-
-@font-face {
-    font-family: 'DistantGalaxy';
-    src: url('../fonts/distgrg_-webfont.eot');
-    src: url('../fonts/distgrg_-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/distgrg_-webfont.woff2') format('woff2'),
-         url('../fonts/distgrg_-webfont.woff') format('woff'),
-         url('../fonts/distgrg_-webfont.ttf') format('truetype'),
-         url('../fonts/distgrg_-webfont.svg#distant_galaxyregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Michroma';
-    src: url('../fonts/michroma-webfont.eot');
-    src: url('../fonts/michroma-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/michroma-webfont.woff2') format('woff2'),
-         url('../fonts/michroma-webfont.woff') format('woff'),
-         url('../fonts/michroma-webfont.ttf') format('truetype'),
-         url('../fonts/michroma-webfont.svg#michromaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/orbitron-black-webfont.eot');
-    src: url('../fonts/orbitron-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/orbitron-black-webfont.woff2') format('woff2'),
-         url('../fonts/orbitron-black-webfont.woff') format('woff'),
-         url('../fonts/orbitron-black-webfont.ttf') format('truetype'),
-         url('../fonts/orbitron-black-webfont.svg#orbitronblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Virgo';
-    src: url('../fonts/virgo-webfont.eot');
-    src: url('../fonts/virgo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/virgo-webfont.woff2') format('woff2'),
-         url('../fonts/virgo-webfont.woff') format('woff'),
-         url('../fonts/virgo-webfont.ttf') format('truetype'),
-         url('../fonts/virgo-webfont.svg#virgo_01regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
