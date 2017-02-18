@@ -10,7 +10,7 @@ html {
     visibility:hidden;
 }
 
-body {
+body, section {
     margin:0px auto;
     width: 80%;
     background-color: white;
