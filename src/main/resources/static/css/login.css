@@ -10,8 +10,8 @@ html {
     visibility:hidden;
 }
 
-body, section {
-    
+body {
+    margin:0px auto;
     width: 80%;
     background-color: white;
     min-height: 100%;
@@ -24,7 +24,7 @@ h1 {
     font-size: 3.5em;
 }
 
-div {
+table, #login {
     margin: auto;
     text-align: center;
     width: 50%;
