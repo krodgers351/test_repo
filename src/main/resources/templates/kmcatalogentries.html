@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" href="../../css/styles.css"/>
     </head>
     <body>
-        <h1 data-th-inline="text"><img th:src="@{/images/logo.jpg}" alt="" />[[${#httpServletRequest.remoteUser}]]'s KM Catalog!</h1>
+        <h1 data-th-inline="text"><img th:src="@{/images/logo.jpg}" alt=""/>[[${#httpServletRequest.remoteUser}]]'s KM Catalog!</h1>
 		<section id="nav">
 			<nav>
 				<ul>
@@ -66,11 +66,10 @@
 				Filename: <input type="text" name="documentFilename" /><br />
 				<input class="button" type="submit" value="Add Catalog Entry"/>
 			</form>
-        </section>
-        <hr />       
-		      
-        <form data-th-action="@{/logout}" method="post">
-            <input class="button" type="submit" value="Sign Out"/>
-        </form>
+			<hr />   
+			<form data-th-action="@{/logout}" method="post">
+				<input class="button" type="submit" value="Sign Out"/>
+			</form>
+        </section>     
     </body>
 </html>
