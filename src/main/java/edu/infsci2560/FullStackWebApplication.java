@@ -1,6 +1,8 @@
 package edu.infsci2560;
 
 import edu.infsci2560.models.KMCatalogEntry;
+import edu.infsci2560.models.KMCatalogEntry.DocumentCategory;
+import edu.infsci2560.models.KMCatalogEntry.Community;
 import edu.infsci2560.repositories.KMCatalogEntryRepository;
 
 import org.slf4j.Logger;
