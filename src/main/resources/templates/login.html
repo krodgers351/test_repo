@@ -8,13 +8,19 @@
 		<header>
             <h1><img th:src="@{/images/logo2.jpg}" src="../../images/logo2.jpg" alt="head with knowledge" />iKnowledge</h1> 
         </header>	
-        <div data-th-if="${param.error}">
+        <!--<div data-th-if="${param.error}">
             Invalid username and password.
         </div>
         <div data-th-if="${param.logout}">
             You have been logged out.
-        </div>
+        </div>-->
 		<section>
+			<div data-th-if="${param.error}">
+            Invalid username and password.
+			</div>
+			<div data-th-if="${param.logout}">
+				You have been logged out.
+			</div>
 			<form data-th-action="@{/login}" method="post">
 				<div><label>Sign in to your Account</label></div>
 				<div><img th:src="@{/images/login.jpg}" alt="login man with key and lock" /></div>
@@ -23,6 +29,42 @@
 				<div><input type="submit" value="Sign In"/></div>
 			</form>
 		</section>
-		
+		<section id="tblLogin"> 
+			<div data-th-if="${param.error}">
+				Invalid username and password.
+			</div>
+			<div data-th-if="${param.logout}">
+				You have been logged out.
+			</div>
+            <form name="frmLogin" id="frmLogin" data-th-action="@{/login}" method="post">
+                <table>
+                    <tr>
+                        <th>Sign in to your account</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img th:src="@{/images/login.jpg}" alt="login man with key and lock" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="lblHidden" for="txtLoginName">User Name:</label>
+                            <input type="text" id="txtLoginName" name="txtLoginName" value="" maxlength="100" placeholder="User Name" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="lblHidden" for="txtPassword">Password:</label>
+                            <input type="password" id="txtPassword" name="txtPassword" value="" maxlength="255" placeholder="Password" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" class="button" name="btnSubmit" id="btnSubmit" value="Sign In" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
     </body>
 </html>
