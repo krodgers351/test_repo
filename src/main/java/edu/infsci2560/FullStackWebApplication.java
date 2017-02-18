@@ -1,7 +1,7 @@
 package edu.infsci2560;
 
-import edu.infsci2560.models.Customer;
-import edu.infsci2560.repositories.CustomerRepository;
+import edu.infsci2560.models.KMCatalogEntry;
+import edu.infsci2560.repositories.KMCatalogEntryRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
