@@ -60,7 +60,6 @@ div {
     -webkit-box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
     -moz-box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
     box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
-    font-family: Virgo, Arial, sans-serif;
     font-size : 18px;
     color : white;
     letter-spacing: 1px;
@@ -74,21 +73,4 @@ div {
     background : linear-gradient(top, #a7b1c4 0%, #3a5061 100%);
     filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7b1c4', endColorstr='#3a5061',GradientType=0 );
     margin: 10px 0;
-}
-
-.lblHidden {
-    position: absolute; 
-    left: -999em;
-}
-
-@font-face {
-    font-family: 'Virgo';
-    src: url('../fonts/virgo-webfont.eot');
-    src: url('../fonts/virgo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/virgo-webfont.woff2') format('woff2'),
-         url('../fonts/virgo-webfont.woff') format('woff'),
-         url('../fonts/virgo-webfont.ttf') format('truetype'),
-         url('../fonts/virgo-webfont.svg#virgo_01regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
