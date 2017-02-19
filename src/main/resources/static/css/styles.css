@@ -79,8 +79,11 @@ th {
 }
 
 #catalog {
-	border: 1px solid white;
 	margin-left: 20px;
+}
+
+#addEntry {
+	margin-left: 50px;
 }
 
 td, th {

@@ -17,7 +17,7 @@
 		</section>
 		<section class="content">
 			<div>
-				<table style="border: 1px solid black">
+				<table id="catalog">
 					<tr>
 						<th>ID</th>
 						<th>Title</th>
@@ -39,37 +39,39 @@
 				</table>
 			</div>
 			<hr />
-			Add Entry to KM Catalog<br />
-			<form data-th-action="@{/kmcatalogentries/add}" name="addKMCatalogEntryForm" method="post">
-				Title: <input type="text" name="documentTitle" /><br />
-				Knowledge Owner: <input type="text" name="knowledgeOwner" /><br />
-				Audience: <input type="text" name="audience" /><br />
-				Document Category:<br />
-				<input type="radio" name="documentCategory" value="Unknown" checked="checked" /> Unknown<br />
-				<input type="radio" name="documentCategory" value="Best_Practice" /> Best Practice<br />
-				<input type="radio" name="documentCategory" value="Design" /> Design<br />
-				<input type="radio" name="documentCategory" value="Lessons_Learned" /> Lessons Learned<br />
-				<input type="radio" name="documentCategory" value="Procedure" /> Procedure<br />
-				<input type="radio" name="documentCategory" value="Reference" /> Reference<br />
-				<input type="radio" name="documentCategory" value="Requirements" /> Requirements<br />
-				<input type="radio" name="documentCategory" value="Standard" /> Standard<br />
-				<input type="radio" name="documentCategory" value="Template" /> Template<br />
-				<input type="radio" name="documentCategory" value="Training" /> Training<br />
-				<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	
-				Community:<br />
-				<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
-				<input type="radio" name="community" value="Chemical_Engineers" /> Chemical Engineers<br />
-				<input type="radio" name="community" value="Electrical_Engineers" /> Electrical Engineers<br />
-				<input type="radio" name="community" value="Mechanical_Engineers" /> Mechanical Engineers<br />
-				<input type="radio" name="community" value="System_Administration" /> System Administration<br />
-				<input type="radio" name="community" value="Developers" /> Developers<br />
-				Filename: <input type="text" name="documentFilename" /><br />
-				<input class="button" type="submit" value="Add Catalog Entry"/>
-			</form>
-			<hr />   
-			<form data-th-action="@{/logout}" method="post">
-				<input class="button" type="submit" value="Sign Out"/>
-			</form>
+			<div id="addEntry">
+				Add Entry to KM Catalog<br />
+				<form data-th-action="@{/kmcatalogentries/add}" name="addKMCatalogEntryForm" method="post">
+					Title: <input type="text" name="documentTitle" /><br />
+					Knowledge Owner: <input type="text" name="knowledgeOwner" /><br />
+					Audience: <input type="text" name="audience" /><br />
+					Document Category:<br />
+					<input type="radio" name="documentCategory" value="Unknown" checked="checked" /> Unknown<br />
+					<input type="radio" name="documentCategory" value="Best_Practice" /> Best Practice<br />
+					<input type="radio" name="documentCategory" value="Design" /> Design<br />
+					<input type="radio" name="documentCategory" value="Lessons_Learned" /> Lessons Learned<br />
+					<input type="radio" name="documentCategory" value="Procedure" /> Procedure<br />
+					<input type="radio" name="documentCategory" value="Reference" /> Reference<br />
+					<input type="radio" name="documentCategory" value="Requirements" /> Requirements<br />
+					<input type="radio" name="documentCategory" value="Standard" /> Standard<br />
+					<input type="radio" name="documentCategory" value="Template" /> Template<br />
+					<input type="radio" name="documentCategory" value="Training" /> Training<br />
+					<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	
+					Community:<br />
+					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
+					<input type="radio" name="community" value="Chemical_Engineers" /> Chemical Engineers<br />
+					<input type="radio" name="community" value="Electrical_Engineers" /> Electrical Engineers<br />
+					<input type="radio" name="community" value="Mechanical_Engineers" /> Mechanical Engineers<br />
+					<input type="radio" name="community" value="System_Administration" /> System Administration<br />
+					<input type="radio" name="community" value="Developers" /> Developers<br />
+					Filename: <input type="text" name="documentFilename" /><br />
+					<input class="button" type="submit" value="Add Catalog Entry"/>
+				</form>
+				<hr />   
+				<form data-th-action="@{/logout}" method="post">
+					<input class="button" type="submit" value="Sign Out"/>
+				</form>
+			</div>
         </section>     
     </body>
 </html>
