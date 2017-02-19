@@ -80,12 +80,16 @@ header{
 	margin-left: 50px;
 }
 
+table {
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+
 th {
 	text-align: left;
     font-size: 1.1em;
 	padding: 3px;
 	margin: 2px;
-	margin-right: 8px;
 }
 
 td {
@@ -133,14 +137,14 @@ img {
 }
 
 .button {
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 12px 12px 12px 12px;
 	background: -webkit-linear-gradient(#2E2F2F, #6A6B6B); 
 	background: -o-linear-gradient(#2E2F2F, #6A6B6B); 
 	background: -moz-linear-gradient(#2E2F2F,0.8), #6A6B6B);
 	background: linear-gradient(#2E2F2F, #6A6B6B); 
 	color: white;
 	margin: 1%;
-	padding: 3px;
+	padding: 5px;
 	font-weight: bold;
 }
 
