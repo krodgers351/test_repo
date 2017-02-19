@@ -80,6 +80,10 @@ header{
 	margin-left: 50px;
 }
 
+input {
+	margin: 2px;
+}
+
 table {
 	border-spacing: 10px;
     border-collapse: separate;
