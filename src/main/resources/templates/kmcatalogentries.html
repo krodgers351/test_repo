@@ -7,7 +7,9 @@
 		<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" href="../../css/styles.css"/>
     </head>
     <body>
-        <h1 data-th-inline="text"><img th:src="@{/images/logo.jpg}" alt=""/>KM Catalog</h1>
+		<header>
+			<h1 data-th-inline="text"><img th:src="@{/images/logo.jpg}" alt=""/>[[${#httpServletRequest.remoteUser}]]'s KM Catalog!</h1>
+		</header>
 		<section id="nav">
 			<nav>
 				<ul>
@@ -66,8 +68,7 @@
 					<input type="radio" name="community" value="Developers" /> Developers<br />
 					Filename: <input type="text" name="documentFilename" /><br />
 					<input class="button" type="submit" value="Add Catalog Entry"/>
-				</form>
-				<hr />   
+				</form> 
 				<form data-th-action="@{/logout}" method="post">
 					<input class="button" type="submit" value="Sign Out"/>
 				</form>
