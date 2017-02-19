@@ -37,7 +37,7 @@ th {
 
 .content {
 	float:right;
-	width:73%;
+	width:78%;
 	margin-left:2%;
 	border-radius: 0px 50px 50px 50px;
 }
@@ -58,7 +58,7 @@ th {
 
 #nav {
 	float:left;
-	width:25%;
+	width:20%;
 	border-radius: 0px 50px 0px 0px;
 	background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0)); 
 	background: -o-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0)); 
@@ -86,9 +86,16 @@ th {
 	margin-left: 50px;
 }
 
-td, th {
+th {
+	padding: 3px;
+	margin: 2px;
+	font-size: 0.9em;
+}
+
+td {
     padding: 3px;
 	margin: 2px;
+	font-size: 0.8em;
 }
 
 section {
@@ -108,7 +115,6 @@ p {
 }
 
 h1{
-	width: 100%;
 	text-align:center;
 	color: #0A30DA;	
 	opacity: 0.8;
@@ -134,10 +140,10 @@ img {
 	background: -o-linear-gradient(#2E2F2F, #6A6B6B); 
 	background: -moz-linear-gradient(#2E2F2F,0.8), #6A6B6B);
 	background: linear-gradient(#2E2F2F, #6A6B6B); 
-	color:white;
-	margin-right:1%;
-	padding:3px;
-	font-weight:bold;
+	color: white;
+	margin: 1%;
+	padding: 3px;
+	font-weight: bold;
 }
 
 a:link {
