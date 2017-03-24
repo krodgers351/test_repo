@@ -26,7 +26,12 @@ public class FullStackWebApplication {
         repository.save(new KMCatalogEntry(1L, "C# Coding Standards", "John Doe", "UnitA", DocumentCategory.Standard, Community.Developers, "csharpstandard.pdf"));
         repository.save(new KMCatalogEntry(2L, "Contaminated Sample Procedure", "Jane Smith", "UnitC", DocumentCategory.Procedure, Community.Chemical_Engineers, "contaminated_sample_procedure.pdf"));
         repository.save(new KMCatalogEntry(3L, "Communications Wiring Diagram for Product X", "Jimmy Jones", "UnitB", DocumentCategory.Design, Community.Electrical_Engineers, "x_comms_wiring_diagram.pdf"));
-    }
+    
+		DocumentCategoryRepository dcRepo = ctx.getBean(DocumentCategoryRepository.class);
+		dcRepo.save(new DocumentCategory(1L, "Best Practice"));
+		dcRepo.save(new DocumentCategory(2L, "Standard"));
+		dcRepo.save(new DocumentCategory(3L, "Requirements));
+	}
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
