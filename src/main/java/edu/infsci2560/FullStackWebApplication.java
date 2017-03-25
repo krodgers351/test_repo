@@ -24,7 +24,7 @@ public class FullStackWebApplication {
     public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(FullStackWebApplication.class, args);
 		
-		/*KMCatalogEntryRepository repository = ctx.getBean(KMCatalogEntryRepository.class);
+		KMCatalogEntryRepository repository = ctx.getBean(KMCatalogEntryRepository.class);
         //repository.save(new KMCatalogEntry(1L, "C# Coding Standards", "John Doe", "UnitA", DocumentCategory.Standard, Community.Developers, "csharpstandard.pdf"));
         //repository.save(new KMCatalogEntry(2L, "Contaminated Sample Procedure", "Jane Smith", "UnitC", DocumentCategory.Procedure, Community.Chemical_Engineers, "contaminated_sample_procedure.pdf"));
         //repository.save(new KMCatalogEntry(3L, "Communications Wiring Diagram for Product X", "Jimmy Jones", "UnitB", DocumentCategory.Design, Community.Electrical_Engineers, "x_comms_wiring_diagram.pdf"));
@@ -41,7 +41,7 @@ public class FullStackWebApplication {
 		//dcRepo.save(new DocumentCategory(3L, "Requirements"));
 		dcRepo.save(x);
 		dcRepo.save(y);
-		dcRepo.save(z);*/
+		dcRepo.save(z);
 	}
 
 //    @Bean
