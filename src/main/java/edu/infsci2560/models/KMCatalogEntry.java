@@ -158,7 +158,7 @@ public class KMCatalogEntry {
     /**
      * @param documentCategory the documentCategory to set
      */
-    public void setDocumentCategory(DocumentCategory documentCategory) {
+    public void setDocumentCategory(String documentCategory) {
         this.documentCategory = documentCategory;
     }
 
