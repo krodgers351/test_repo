@@ -7,6 +7,7 @@ package edu.infsci2560.controllers;
 
 import edu.infsci2560.models.DocumentCategory;
 import edu.infsci2560.repositories.DocumentCategoryRepository;
+import edu.infsci2560.services.DocumentCategoriesService;
 import javax.validation.Valid;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
