@@ -35,8 +35,8 @@ public class DocumentCategoriesController {
     }
     
     @RequestMapping(value = "documentcategories/add", method = RequestMethod.POST, consumes="application/x-www-form-urlencoded", produces = "application/json")
-    public ModelAndView create(@ModelAttribute @Valid DocumentCategory categoryName, BindingResult result) {
-        repository.save(categoryName);
+    public ModelAndView create(@ModelAttribute @Valid DocumentCategory documentCategory, BindingResult result) {
+        repository.save(documentCategory);
         return new ModelAndView("documentcategories", "documentcategories", repository.findAll());
     }
     
