@@ -50,7 +50,8 @@ public class KMCatalogEntry {
     protected String documentTitle;
     protected String knowledgeOwner;
     protected String audience;
-    protected DocumentCategory documentCategory;
+    //protected DocumentCategory documentCategory;
+	protected String documentCategory;
     protected Community community;
     protected String documentFilename;
     
@@ -65,7 +66,7 @@ public class KMCatalogEntry {
         this.documentFilename = null;
     }
     
-    public KMCatalogEntry(Long id, String title, String owner, String audience, DocumentCategory category, Community community, String filename){
+    public KMCatalogEntry(Long id, String title, String owner, String audience, String category, Community community, String filename){
         this.id = id;
         this.documentTitle = title;
         this.knowledgeOwner = owner;
@@ -150,7 +151,7 @@ public class KMCatalogEntry {
     /**
      * @return the documentCategory
      */
-    public DocumentCategory getDocumentCategory() {
+    public String getDocumentCategory() {
         return documentCategory;
     }
 
