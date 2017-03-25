@@ -30,7 +30,7 @@ public class FullStackWebApplication {
 		DocumentCategoryRepository dcRepo = ctx.getBean(DocumentCategoryRepository.class);
 		dcRepo.save(new DocumentCategory(1L, "Best Practice"));
 		dcRepo.save(new DocumentCategory(2L, "Standard"));
-		dcRepo.save(new DocumentCategory(3L, "Requirements));
+		dcRepo.save(new DocumentCategory(3L, "Requirements"));
 	}
 
 //    @Bean
