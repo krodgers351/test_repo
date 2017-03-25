@@ -12,8 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
-import com.google.common.collect.Iterators.forEnumeration;
-import com.google.common.collect.Lists.newArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -56,6 +54,13 @@ public class DocumentCategoriesService {
     }
 
 	public List<DocumentCategory> getList() {
-        return Lists.newArrayList(repository.findAll());
+		Iterable<DocumentCategory> iterable = repository.findAll();
+		List<DocumentCategory> list = new List<DocumentCategory>();
+
+		for(DocumentCategory doc : iterable){
+			list.add(doc);
+		}
+		return list;
+        //return Lists.newArrayList(repository.findAll());
     }
 }
