@@ -31,9 +31,9 @@ public class FullStackWebApplication {
 		DocumentCategory x = new DocumentCategory(1L, "Best Practice");
 		DocumentCategory y = new DocumentCategory(2L, "Standard");
 		DocumentCategory z = new DocumentCategory(3L, "Requirements");
-		 repository.save(new KMCatalogEntry(1L, "C# Coding Standards", "John Doe", "UnitA", x, Community.Developers, "csharpstandard.pdf"));
-        repository.save(new KMCatalogEntry(2L, "Contaminated Sample Procedure", "Jane Smith", "UnitC", y, Community.Chemical_Engineers, "contaminated_sample_procedure.pdf"));
-        repository.save(new KMCatalogEntry(3L, "Communications Wiring Diagram for Product X", "Jimmy Jones", "UnitB", z, Community.Electrical_Engineers, "x_comms_wiring_diagram.pdf"));
+		 repository.save(new KMCatalogEntry(1L, "C# Coding Standards", "John Doe", "UnitA", Community.Developers, "csharpstandard.pdf"));
+        repository.save(new KMCatalogEntry(2L, "Contaminated Sample Procedure", "Jane Smith", "UnitC", Community.Chemical_Engineers, "contaminated_sample_procedure.pdf"));
+        repository.save(new KMCatalogEntry(3L, "Communications Wiring Diagram for Product X", "Jimmy Jones", "UnitB", Community.Electrical_Engineers, "x_comms_wiring_diagram.pdf"));
 
 		DocumentCategoryRepository dcRepo = ctx.getBean(DocumentCategoryRepository.class);
 		//dcRepo.save(new DocumentCategory(1L, "Best Practice"));

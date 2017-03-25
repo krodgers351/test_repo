@@ -6,7 +6,6 @@
 package edu.infsci2560.repositories;
 
 import edu.infsci2560.models.KMCatalogEntry;
-import edu.infsci2560.models.DocumentCategory;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**
