@@ -61,7 +61,7 @@
 					<input type="radio" name="documentCategory" value="Training" /> Training<br />
 					<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	-->
                     <div data-th-each="entry : ${documentcategories}">
-                        <input type="radio" name="documentCategory" data-th-value="${entry.categoryName}" />"${entry.categoryName}"<br />
+                        <input type="radio" name="documentCategory" data-th-value="${entry.categoryName}" />${entry.categoryName}<br />
                     </div>
 					Community:<br />
 					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
