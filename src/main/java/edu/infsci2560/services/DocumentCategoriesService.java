@@ -50,4 +50,8 @@ public class DocumentCategoriesService {
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(repository.save(categoryName), headers, HttpStatus.OK);
     }
+
+	public List<DocumentCategory> getList() {
+        return repository.findAll();
+    }
 }

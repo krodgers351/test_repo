@@ -37,7 +37,7 @@ public class DocumentCategoriesController {
 	@ModelAttribute("allDocuments")
     //@PreAuthorize("hasAnyRole('CTRL_USER_LIST_GET','CTRL_USER_EDIT_GET')")
     public List<DocumentCategory> getAllDocuments() {
-        return documentService.list();
+        return documentService.getList();
     }
 
     @RequestMapping(value = "documentcategories", method = RequestMethod.GET)
