@@ -59,7 +59,8 @@ public class KMCatalogEntry {
         this.documentTitle = null;
         this.knowledgeOwner = null;
         this.audience = null;
-        this.documentCategory = DocumentCategory.Unknown;
+		this.documentCategory = null;
+        //this.documentCategory = DocumentCategory.Unknown;
         this.community = Community.Everyone;
         this.documentFilename = null;
     }
