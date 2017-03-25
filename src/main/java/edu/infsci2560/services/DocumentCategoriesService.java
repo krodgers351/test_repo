@@ -52,6 +52,6 @@ public class DocumentCategoriesService {
     }
 
 	public List<DocumentCategory> getList() {
-        return repository.findAll();
+        return Lists.newArrayList(repository.findAll());
     }
 }
