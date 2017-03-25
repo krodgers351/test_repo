@@ -5,7 +5,6 @@
  */
 package edu.infsci2560.models;
 
-import edu.infsci2560.models.DocumentCategory;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
