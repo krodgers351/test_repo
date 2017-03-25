@@ -46,8 +46,8 @@ public class DocumentCategoriesService {
     }
 
     @RequestMapping(method = RequestMethod.POST, consumes="application/json", produces = "application/json")
-    public ResponseEntity<DocumentCategory> create(@RequestBody DocumentCategory documentCategory) {
+    public ResponseEntity<DocumentCategory> create(@RequestBody DocumentCategory categoryName) {
         HttpHeaders headers = new HttpHeaders();
-        return new ResponseEntity<>(repository.save(documentCategory), headers, HttpStatus.OK);
+        return new ResponseEntity<>(repository.save(categoryName), headers, HttpStatus.OK);
     }
 }
