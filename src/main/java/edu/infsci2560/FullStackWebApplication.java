@@ -43,7 +43,6 @@ public class FullStackWebApplication {
 		dcRepo.save(y);
 		dcRepo.save(z);
 	}
-	}
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
