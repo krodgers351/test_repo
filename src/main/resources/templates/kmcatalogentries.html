@@ -65,6 +65,7 @@
                                 data-th-value="${entry.id}"
                                 data-th-text="${entry.categoryName}" />
                     </select>
+                    <input type="radio" data-th-each="entry : ${documentcategories}" data-th-value="${entry.categoryName}" data-th-text="${entry.categoryName}" /><br />
 					Community:<br />
 					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
 					<input type="radio" name="community" value="Chemical_Engineers" /> Chemical Engineers<br />
