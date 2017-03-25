@@ -61,7 +61,7 @@
 					<input type="radio" name="documentCategory" value="Training" /> Training<br />
 					<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	-->
                     <table id="catalog">
-                        <tr data-th-each="entry : ${documetcategories}">
+                        <tr data-th-each="entry : ${documentcategories}">
                             <td>
                                 <input type="radio" data-th-value="${entry.categoryName}" data-th-text="${entry.categoryName}" /><br />
                             </td>
