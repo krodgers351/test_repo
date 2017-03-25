@@ -60,13 +60,12 @@
 					<input type="radio" name="documentCategory" value="Template" /> Template<br />
 					<input type="radio" name="documentCategory" value="Training" /> Training<br />
 					<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	-->
-                    <table id="catalog">
-                        <tr data-th-each="entry : ${documentcategories}">
-                            <td>
-                                <input type="radio" data-th-value="${entry.categoryName}" data-th-text="${entry.categoryName}" /><br />
-                            </td>
-                        </tr>
-                    </table>
+                    <select class="form-control" name="example" id="example">
+                        <option value="0">ALL</option>
+                        <option th:each="entry : ${documentcategories}"
+                                th:value="${entry.id}"
+                                th:text="${entry.categoryName}"></option>
+                    </select>
 					Community:<br />
 					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
 					<input type="radio" name="community" value="Chemical_Engineers" /> Chemical Engineers<br />
