@@ -55,7 +55,7 @@ public class DocumentCategoriesService {
 
 	public List<DocumentCategory> getList() {
 		Iterable<DocumentCategory> iterable = repository.findAll();
-		List<DocumentCategory> list = new List<DocumentCategory>();
+		List<DocumentCategory> list = new ArrayList<DocumentCategory>();
 
 		for(DocumentCategory doc : iterable){
 			list.add(doc);
