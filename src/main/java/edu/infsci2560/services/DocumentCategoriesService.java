@@ -10,6 +10,8 @@ import edu.infsci2560.repositories.DocumentCategoryRepository;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import static com.google.common.collect.Iterators.forEnumeration;
+import static com.google.common.collect.Lists.newArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
