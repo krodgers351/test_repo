@@ -21,6 +21,9 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 public class DocumentCategory {
     private static final long serialVersionUID = 1L;
 	
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    protected Long id;
 	protected String categoryName;
 
 	public DocumentCategory(){
