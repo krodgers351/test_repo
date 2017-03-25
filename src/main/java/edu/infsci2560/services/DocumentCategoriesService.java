@@ -7,19 +7,10 @@ package edu.infsci2560.services;
 
 import edu.infsci2560.models.DocumentCategory;
 import edu.infsci2560.repositories.DocumentCategoryRepository;
-
-import static com.google.common.base.Preconditions.checkArgument;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.collect.Lists.newArrayList;
-import static com.google.common.collect.Maps.newHashMap;
-import static com.google.common.collect.Sets.newHashSet;
-import static java.util.Collections.unmodifiableList;
-import static java.util.Collections.unmodifiableMap;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import org.assertj.core.util.Lists;
 import java.util.ArrayList;
 import java.util.Arrays;
 import static com.google.common.collect.Iterators.forEnumeration;
