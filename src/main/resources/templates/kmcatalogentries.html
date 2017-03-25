@@ -63,8 +63,8 @@
                     <select class="form-control" name="example" id="example">
                         <option value="0">ALL</option>
                         <option data-th-each="entry : ${documentcategories}"
-                                data-th-value="${entry.id}"
-                                data-th-text="${entry.categoryName}"></option>
+                                data-th-value="${entry.getId()}"
+                                data-th-text="${entry.getCategoryName()}"></option>
                     </select>
 					Community:<br />
 					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
