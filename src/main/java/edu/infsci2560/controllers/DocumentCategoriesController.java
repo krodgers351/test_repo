@@ -25,8 +25,8 @@ import org.springframework.web.servlet.ModelAndView;
  * @author KRodgers
  */
 @Controller
-public class DocumentCategoriesController {
-    @Autowired
+public class DocumentCategoriesController {    
+	@Autowired
     private DocumentCategoryRepository repository;
     
     @RequestMapping(value = "documentcategories", method = RequestMethod.GET)
@@ -39,5 +39,5 @@ public class DocumentCategoriesController {
         repository.save(documentCategory);
         return new ModelAndView("documentcategories", "documentcategories", repository.findAll());
     }
-    
+
 }
