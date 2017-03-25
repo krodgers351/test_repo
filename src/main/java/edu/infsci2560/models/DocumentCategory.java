@@ -52,14 +52,14 @@ public class DocumentCategory {
     }
 
 	/**
-     * @return the documentTitle
+     * @return the categoryName
      */
     public String getDocumentCategory() {
         return categoryName;
     }
 
     /**
-     * @param documentTitle the documentTitle to set
+     * @param documentCategory the categoryName to set
      */
     public void setDocumentCategory(String documentCategory) {
         this.categoryName = documentCategory;
