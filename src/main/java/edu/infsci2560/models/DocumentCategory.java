@@ -38,7 +38,7 @@ public class DocumentCategory {
 
 	@Override
     public String toString() {
-        return "[ document category =" + this.name  + " ]";
+        return "[ document category =" + this.categoryName  + " ]";
     }
 
 	@Override
