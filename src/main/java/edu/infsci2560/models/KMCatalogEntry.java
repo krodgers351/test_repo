@@ -50,7 +50,7 @@ public class KMCatalogEntry {
     protected String documentTitle;
     protected String knowledgeOwner;
     protected String audience;
-    //protected DocumentCategory documentCategory;
+    protected DocumentCategory documentCategory;
     protected Community community;
     protected String documentFilename;
     
@@ -59,26 +59,26 @@ public class KMCatalogEntry {
         this.documentTitle = null;
         this.knowledgeOwner = null;
         this.audience = null;
-		//this.documentCategory = null;
+		this.documentCategory = null;
         //this.documentCategory = DocumentCategory.Unknown;
         this.community = Community.Everyone;
         this.documentFilename = null;
     }
     
-    public KMCatalogEntry(Long id, String title, String owner, String audience, Community community, String filename){
+    public KMCatalogEntry(Long id, String title, String owner, String audience, DocumentCategory category, Community community, String filename){
         this.id = id;
         this.documentTitle = title;
         this.knowledgeOwner = owner;
         this.audience = audience;
-        //this.documentCategory = category;
+        this.documentCategory = category;
         this.community = community;
         this.documentFilename = filename;
     }
     
     @Override
     public String toString() {
-        return "[ id=" + this.id + ", title=" + this.documentTitle + ", knowledge owner=" + this.knowledgeOwner + ", audience=" + this.audience + ", category=" + 
-				", community=" + this.community + ", filename=" + this.documentFilename + " ]";
+        return "[ id=" + this.id + ", title=" + this.documentTitle + ", knowledge owner=" + this.knowledgeOwner + ", audience=" + this.audience + ", category=" 
+                + this.documentCategory + ", community=" + this.community + ", filename=" + this.documentFilename + " ]";
     }
 
     @Override
@@ -147,7 +147,20 @@ public class KMCatalogEntry {
         this.audience = audience;
     }
 
-    
+    /**
+     * @return the documentCategory
+     */
+    public DocumentCategory getDocumentCategory() {
+        return documentCategory;
+    }
+
+    /**
+     * @param documentCategory the documentCategory to set
+     */
+    public void setDocumentCategory(DocumentCategory documentCategory) {
+        this.documentCategory = documentCategory;
+    }
+
     /**
      * @return the community
      */
