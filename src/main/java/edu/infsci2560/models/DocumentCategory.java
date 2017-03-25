@@ -68,14 +68,14 @@ public class DocumentCategory {
 	/**
      * @return the categoryName
      */
-    public String getDocumentCategory() {
+    public String getCategoryName() {
         return categoryName;
     }
 
     /**
      * @param documentCategory the categoryName to set
      */
-    public void setDocumentCategory(String documentCategory) {
+    public void setCategoryName(String documentCategory) {
         this.categoryName = documentCategory;
     }
 }
