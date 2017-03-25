@@ -10,8 +10,6 @@ import edu.infsci2560.repositories.DocumentCategoryRepository;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -51,16 +49,5 @@ public class DocumentCategoriesService {
     public ResponseEntity<DocumentCategory> create(@RequestBody DocumentCategory categoryName) {
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(repository.save(categoryName), headers, HttpStatus.OK);
-    }
-
-	public List<DocumentCategory> getList() {
-		Iterable<DocumentCategory> iterable = repository.findAll();
-		List<DocumentCategory> list = new ArrayList<DocumentCategory>();
-
-		for(DocumentCategory doc : iterable){
-			list.add(doc);
-		}
-		return list;
-        //return Lists.newArrayList(repository.findAll());
     }
 }

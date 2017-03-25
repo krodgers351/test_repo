@@ -7,9 +7,7 @@ package edu.infsci2560.controllers;
 
 import edu.infsci2560.models.DocumentCategory;
 import edu.infsci2560.repositories.DocumentCategoryRepository;
-import edu.infsci2560.services.DocumentCategoriesService;
 import javax.validation.Valid;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -30,16 +28,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class DocumentCategoriesController {
     @Autowired
     private DocumentCategoryRepository repository;
-
-	@Autowired
-    private DocumentCategoriesService documentService;
     
-	@ModelAttribute("allDocuments")
-    //@PreAuthorize("hasAnyRole('CTRL_USER_LIST_GET','CTRL_USER_EDIT_GET')")
-    public List<DocumentCategory> getAllDocuments() {
-        return documentService.getList();
-    }
-
     @RequestMapping(value = "documentcategories", method = RequestMethod.GET)
     public ModelAndView index() {        
         return new ModelAndView("documentcategories", "documentcategories", repository.findAll());
