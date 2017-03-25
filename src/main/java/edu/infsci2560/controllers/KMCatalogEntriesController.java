@@ -7,6 +7,7 @@ package edu.infsci2560.controllers;
 
 import edu.infsci2560.models.KMCatalogEntry;
 import edu.infsci2560.repositories.KMCatalogEntryRepository;
+import edu.infsci2560.models.DocumentCategory;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
