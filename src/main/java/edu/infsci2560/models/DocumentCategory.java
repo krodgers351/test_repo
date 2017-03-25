@@ -24,10 +24,12 @@ public class DocumentCategory {
 	protected String categoryName;
 
 	public DocumentCategory(){
+		this.id = Long.MAX_VALUE;
 		this.categoryName = null;
 	}
 
-	public DocumentCategory(String name){
+	public DocumentCategory(Long id, String name){
+		this.id = id;
 		this.categoryName = name;
 	}
 
