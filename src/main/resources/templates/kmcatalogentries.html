@@ -62,9 +62,9 @@
 					<input type="radio" name="documentCategory" value="User_Documentation" /> User Documentation<br />	-->
                     <select class="form-control" name="example" id="example">
                         <option value="0">ALL</option>
-                        <option data-th-each="entry : ${documentcategories}"
-                                data-th-value="${entry.getId()}"
-                                data-th-text="${entry.getCategoryName()}"></option>
+                        <option th:each="entry : ${documentcategories}"
+                                th:value="${entry.getId()}"
+                                th:text="${entry.getCategoryName()}"></option>
                     </select>
 					Community:<br />
 					<input type="radio" name="community" value="Everyone" checked="checked" /> Everyone<br />
